@@ -77,12 +77,23 @@ def generate_caption(img_path):
     y_pred = predict_caption(model, feature, tokenizer, max_length)
 
     print('--------------------Predicted--------------------')
-    print(y_pred)
+    #print(y_pred)
+    
+    
+    #to remove "startseq" and "endseq" from results
+    list_pred = list(y_pred)
+    list_pred = list_pred[9:-7]
+    text_pred = ''
+    for i in range(len(list_pred)):
+        text_pred+=list_pred[i]
+    
+    print(text_pred)
+    return text_pred
     
     # Display image
     # plt.imshow(image)
     # plt.axis("off")
     # plt.show()
 
-# Example usage with any image
+# Give path of image
 generate_caption("Path_to_Image")
