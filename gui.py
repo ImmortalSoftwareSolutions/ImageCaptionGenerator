@@ -6,33 +6,6 @@ import os
 # from CaptionGenerator import generate_caption
 from captiongenerator32k import generate_caption
 from hashtag_generator import predict_hashtags
-#from instagrapi import Client
-
-
-#USERNAME = 'testid3004'
-#PASSWORD = 'utkarsh30'
-
-#cl = Client()
-#cl.login(USERNAME, PASSWORD)
-
-
-#def post():
-#    cl.photo_upload(st.session_state['save_image'],st.session_state['caption'])
-#    st.success("Uploaded on IG")
-    
-
-def add_hashtags(text):
-    if not text:
-        return False
-    
-    words = text.split()
-    capitalized_words = [word.capitalize() for word in words]
-    hashtag_string = "#" + "".join(capitalized_words)
-    
-    if len(hashtag_string) > 140:
-        return False
-    
-    return hashtag_string
 
 
 def run():
