@@ -9,6 +9,6 @@ Download Dataset For Hashtags [Here](https://drive.google.com/uc?export=download
 Download all the necessary files from [Here](https://drive.google.com/drive/folders/1-GgbbDrP_K4gWyAkCUzv9q9Qmu-8VTrj?usp=sharing)  
 
 To run the program:
-1. Download the required Libraries. 
-2. Download all the files from the above link and store it inside the repository folder.
+1. Download the required libraries using command ```pip install -r requirements.txt```
+2. Download all the files from [Here](https://drive.google.com/drive/folders/1-GgbbDrP_K4gWyAkCUzv9q9Qmu-8VTrj?usp=sharing) and store it inside the repository folder.
 3. Run the code using ```streamlit run gui.py``` on terminal.
