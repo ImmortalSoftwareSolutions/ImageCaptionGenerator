@@ -96,4 +96,4 @@ def generate_caption(img_path):
     # plt.show()
 
 # Give path of image
-generate_caption("Path_to_Image")
+#generate_caption("Path_to_Image")
